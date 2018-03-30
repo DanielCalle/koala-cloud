@@ -1,0 +1,30 @@
+{
+  "name": "Koala Kloud",
+  "description": "Nube de almacenamiento de archivos para usuarios registrados",
+  "type": "Proyecto de fin de curso",
+  "authors": [
+    {
+      "name": "Daniel Calle",
+      "email": "danielcallesanchez@gmail.com"
+    },
+    {
+      "name": "Daniel Durán",
+      "email": "dani_da11@hotmail.com"
+    },
+    {
+      "name": "Sergio Cejas",
+      "email": "beld_x@hotmail.com"
+    }
+  ],
+  "require": {
+    "symfony/yaml": "2.7.*",
+    "twig/twig": "1.18.*"
+  },
+  "autoload": {
+      "psr-4":{
+        "Model\\": "models/",
+        "ORM\\": "ORM/",
+        "Tools\\": "library/"
+      }
+  }
+}

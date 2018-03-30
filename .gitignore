@@ -1,0 +1,5 @@
+.idea/
+vendor/*
+cache/*
+data/*
+config/database.yml

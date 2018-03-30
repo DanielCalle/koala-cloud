@@ -1,0 +1,5 @@
+provider: MySqlProvider
+host: localhost
+user: root
+name: db_name
+password:

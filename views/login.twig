@@ -1,0 +1,75 @@
+{% extends "base.twig" %}
+
+{% block content %}
+ <script src="js/jquery-ui.js"></script>
+ <script src="js/jquery.cycle2.js"></script>
+ <script src="js/fotorama.js"></script>
+	<div class="contenedor-centrado">
+		<header>
+			<div class="cabecera">
+				<div class="logo">
+					<a href="./"><img alt="logo" src="images/logo.png"></a>
+				</div>
+				<div class="menu-cabecera">
+					<a href="contacto">Contacto</a>
+				</div>
+			</div>
+		</header>
+	</div>
+    <div class="contenedor" style="margin-top: 125x;">
+		<div class="contenedor-centrado">
+			<div class="col-60" style="margin-top:100px;">
+				<div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycletimeout="5000" data-cycle-slides="> div">
+				    <div>
+				        <img src="images/imagen4.jpg">
+				    </div>
+				    <div>
+				        <img src="images/imagen5.jpg">
+				    </div>
+				    <div>
+				        <img src="images/imagen6.jpg">
+				    </div>
+				</div>
+			</div>
+			<div class="col-40" style="margin-top:100px;">
+				<img class="imagen-koala" src="images/koala.png"><h1 class="titular-seccion">LOGIN</h1>
+				<p class="mensaje-error">{{ message }}</p>
+				<form id="login" action="./" method="POST">
+					<label for="">E-mail</label><input class="input-datos"name="email" placeholder="Introduzca su email" type="text">
+					<label for="">Password</label><input class="input-datos"name="pass" placeholder="Introduzca su contraseña"type="password">
+					<input class="button-enviar" type="submit" value="Enviar">
+				</form>
+        		<a class="button-login" href="registro">Registrarse</a>
+			</div>
+		</div>
+    </div>
+	<div class="contenedor gris" style="margin-top: 150px;">
+		<div class="contenedor-centrado">
+        	<hr style="width: 100%; float: left;">
+			<div class="col-30">
+				<div class="padd">
+					<h2 class="text-footer">Acerca de nosotros</h2>
+                    <h2 class="text-footer2">Nuestro equipo</h2>
+					<h2 class="text-footer2">Marcas</h2>
+					<h2 class="text-footer2">Empleos</h2>
+				</div>
+			</div>
+			<div class="col-30">
+				<div class="padd">
+					<h2 class="text-footer">Asistencia</h2>
+                    <h2 class="text-footer2">Copyright</h2>
+					<h2 class="text-footer2">Donde estamos</h2>
+					<h2 class="text-footer2">Centro de ayuda</h2>
+				</div>
+			</div>
+			<div class="col-30">
+				<div class="padd">
+					<h2 class="text-footer">Comunidad</h2>
+					<h2 class="text-footer2">Twitter</h2>
+					<h2 class="text-footer2">Facebook</h2>
+					<h2 class="text-footer2">Foro</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
